@@ -1,0 +1,83 @@
+
+:root {
+  
+
+  --body-font-family:'Plus Jakarta Sans', sans-serif;
+
+}
+body {
+  background-color: var(--white-color);
+  font-family: var(--body-font-family); 
+}
+h1 {
+    text-shadow: 0 2px 3px #424040;
+    position: relative;
+    top: -150px;
+    color: #860101;
+}
+
+h3{
+  text-shadow: 2px 3px 3px rgb(109, 12, 12);
+  position: relative;
+    top: -150px;
+}
+
+.section-bg {
+  background-color: var(--section-bg-color);
+}
+.section-overlay {
+  background-color: var(--dark-color);
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.65;
+}
+.back-top-icon {
+  font-size: var(--h2-font-size);
+}
+.hero-section {
+  background-color: var(--dark-color);
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 991px) {
+  .hero-section {
+    height: 100vh;
+  }
+}
+
+
+.hero-section .custom-border-btn {
+  border-color: transparent;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 9;
+}
+
+.hero-slides {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+}
+
+
+  .hero-section::after {
+    width: 200px;
+    height: 200px;
+  }
+  .hero-slides {
+    background-image: url('p1.jpeg'); /* Change 'new-image.jpg' to the path of your new image */
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+  }
+  
